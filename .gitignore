@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+.DS_Store
+config.json
+package-lock.json
+node_modules
+*.log
+*.lock
+=======
+data/
+nginx/logs/
+>>>>>>> prueba

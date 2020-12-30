@@ -1,0 +1,4 @@
+Api_Key = "lXzIA0nNm5ryBjatmFjfyVotP"
+Api_Secret ="AkSmN4Q6T76ybj1QYjfuTcmnWh4QyJ7E3a6UUY5PFUwkjXOX6R"
+Access_Token="113336777-c0J3Spymxf6DGKA4m1DzGOSgciJTUJgjrduXfSrb"
+Access_Token_Secret="rPIiovWY2dVAebL16AEanEjvFFCZaOVXlkZumeMW5VULe"
