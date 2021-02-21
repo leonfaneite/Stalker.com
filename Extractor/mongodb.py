@@ -11,7 +11,7 @@ def connect_database():
     MONGODB_PORT = '27017'
     MONGODB_TIMEOUT = 5000
     
-    URI_CONNECTION = "mongodb://root:1234@localhost:27017/twitterdb"
+    URI_CONNECTION = "mongodb://leon:1234@localhost:27017/twitterdb"
     
     try:
         client = MongoClient(URI_CONNECTION, serverSelectionTimeoutMS=MONGODB_TIMEOUT)
@@ -25,6 +25,6 @@ def connect_database():
     except errors.ConnectionFailure as error:
         print 'Could not connect to MongoDB: %s' % error
 
-
+ 
 
 connect_database()
