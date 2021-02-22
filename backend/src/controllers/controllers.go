@@ -13,7 +13,7 @@ import (
 )
 
 type response struct {
-    ID      int64  `json:"id,omitempty"`
+    ID      int  `json:"id,omitempty"`
     Message string `json:"message,omitempty"`
 }
 
@@ -56,18 +56,18 @@ func CreateWord(w http.ResponseWriter, r *http.Request) {
 
 
 /////////Add Order////////////
-func Insert_words(words models.Query) int64  {
+func Insert_words(words models.Query) int  {
 	
 	db := dbpostgrest.GetConnect()
 	defer db.Close()
-	sqlStatement := `INSERT INTO Query (Words) VALUES ($1, $2) RETURNING Id`
+	sqlStatement := `INSERT INTO query(Id,Words) VALUES ($1,$2) RETURNING Id`
 
     // the inserted id will store in this id
-    var Id int64
+    var Id int
 
     // execute the sql statement
     // Scan function will save the insert id in the id
-    err := db.QueryRow(sqlStatement, words.Words).Scan(&Id)
+    err := db.QueryRow(sqlStatement,words.Id, words.Words).Scan(&Id)
 
     if err != nil {
         log.Fatalf("Unable to execute the query. %v", err)
@@ -81,7 +81,7 @@ func Insert_words(words models.Query) int64  {
 }
 
 
-func Get_words(id int64) (models.Query, error) {
+func Get_words(id int) (models.Query, error) {
     // create the postgres db connection
 	db := dbpostgrest.GetConnect()
 	defer db.Close()
@@ -90,7 +90,7 @@ func Get_words(id int64) (models.Query, error) {
     var word models.Query
 
     // create the select sql query
-    sqlStatement := `SELECT * FROM Query WHERE userid=$1`
+    sqlStatement := `SELECT * FROM query WHERE Id=$1`
 
     // execute the sql statement
     row := db.QueryRow(sqlStatement, id)
