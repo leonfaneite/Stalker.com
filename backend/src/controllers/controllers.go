@@ -8,6 +8,8 @@ import (
 	"github.com/leonfaneite/backend/src/models"
 	"log"
 	"database/sql"
+	"github.com/gorilla/mux"
+	"strconv"
 	_ "github.com/lib/pq"
 	
 )
@@ -51,7 +53,29 @@ func CreateWord(w http.ResponseWriter, r *http.Request) {
 
 
 
+func GetWord(w http.ResponseWriter, r *http.Request) {
+    w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
+    w.Header().Set("Access-Control-Allow-Origin", "*")
+    // get the userid from the request params, key is "id"
+    params := mux.Vars(r)
 
+    // convert the id type from string to int
+    id, err := strconv.Atoi(params["id"])
+
+    if err != nil {
+        log.Fatalf("Unable to convert the string into int.  %v", err)
+    }
+
+    // call the getUser function with user id to retrieve a single user
+    find, err := Get_words(int(id))
+
+    if err != nil {
+        log.Fatalf("Unable to get user. %v", err)
+    }
+
+    // send the response
+    json.NewEncoder(w).Encode(find)
+}
 
 
 

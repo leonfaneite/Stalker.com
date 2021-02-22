@@ -21,7 +21,7 @@ func main(){
 
 	router := mux.NewRouter()
 	apiRouter := router.PathPrefix("/api/").Subrouter()
-	//apiRouter.HandleFunc("/find", controllers.Get_words()).Methods("GET")
+	apiRouter.HandleFunc("/find/{id}", controllers.GetWord).Methods("GET")
 	apiRouter.HandleFunc("/add", controllers.CreateWord).Methods("POST")
 	fmt.Printf("Server running at port %s", port)
 	http.ListenAndServe(":"+port, router)
