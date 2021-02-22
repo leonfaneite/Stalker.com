@@ -1,6 +1,6 @@
 
 version: '3.7'
-services:
+srvices:
 
   mongo:
     image: mongo:4.4.2
@@ -33,10 +33,10 @@ services:
 
       #recuerda crear script para crear usuario de bd a utilizar
 
-  postgresql:
-  
-      image: 'postgres:13.2-alpine'
-      container_name: postgresql
+postgresql:
+
+    image: 'postgres:13.2-alpine'
+    container_name: postgresql
       environment:      
         - POSTGRES_USER=usuario
         - POSTGRES_PASSWORD=usuario
