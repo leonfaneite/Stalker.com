@@ -4,11 +4,14 @@ import tweepy
 import json
 from pymongo import MongoClient
 from credenciales import *
+import quey_twitter as w
+
+
+WORDS = w.conexion_pg()
+
 
 MONGO_HOST= 'mongodb://root:1234@mongo:27017'  # assuming you have mongoDB installed locally
                                              # and a database called 
-
-WORDS = ['#bigdata', '#AI', '#datascience', '#machinelearning', '#ml', '#iot']
 
 CONSUMER_KEY = Api_Key
 CONSUMER_SECRET = Api_Secret

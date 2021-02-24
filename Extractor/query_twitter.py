@@ -8,15 +8,26 @@ def conexion_pg():
     
     cursor1 = conexion.cursor()
 
-    cursor1.execute("SELECT * FROM query")
-
-    datos = []
-
-    for file in cursor1:
-
-        datos.append(file)
-        
-        print(datos)
-        
+    cursor1.execute("SELECT words FROM query")
     
-conexion_pg()
+
+    for elements  in cursor1:
+
+        words_q = str(elements[0])
+
+        words_all = words_q.split(",")
+
+
+        
+        lista =[]
+
+        for term  in words_all:        
+            
+            word = str("#"+ term)
+
+            lista.append(word)
+      
+        return lista
+
+
+print(conexion_pg())
