@@ -14,6 +14,7 @@ COPY . .
 RUN pip install -r requirements.txt
 RUN pip install tweepy
 RUN pip install pymongo
+RUN pip install psycopg2
 
 
 ENV PYTHONUNBUFFERED 1

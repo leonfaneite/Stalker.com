@@ -1,10 +1,13 @@
-
 import os
 import tweepy
 import json
 from pymongo import MongoClient
 from credenciales import *
-import quey_twitter as w
+import query_twitter as w
+import psycopg2
+
+
+
 
 
 WORDS = w.conexion_pg()
@@ -66,7 +69,3 @@ listener = StreamListener(api=tweepy.API(wait_on_rate_limit=True))
 streamer = tweepy.Stream(auth=auth, listener=listener)
 print("Tracking: " + str(WORDS))
 streamer.filter(track=WORDS)
-
-#
-##
-##hello world

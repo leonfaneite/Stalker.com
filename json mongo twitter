@@ -1,0 +1,308 @@
+"_id" : ObjectId(""), 
+    "created_at" : "", 
+    "id" : NumberLong(), 
+    "id_str" : "", 
+    "text" : "", 
+    "source" : "", 
+    "truncated" : false, 
+    "in_reply_to_status_id" : null, 
+    "in_reply_to_status_id_str" : null, 
+    "in_reply_to_user_id" : null, 
+    "in_reply_to_user_id_str" : null, 
+    "in_reply_to_screen_name" : null, 
+    "user" : {
+        "id" : NumberInt(), 
+        "id_str" : "", 
+        "name" : "", 
+        "screen_name" : "", 
+        "location" : "", 
+        "url" : "", 
+        "description" : "", 
+        "translator_type" : "none", 
+        "protected" : false, 
+        "verified" : false, 
+        "followers_count" : NumberInt(), 
+        "friends_count" : NumberInt(), 
+        "listed_count" : NumberInt(), 
+        "favourites_count" : NumberInt(), 
+        "statuses_count" : NumberInt(), 
+        "created_at" : "", 
+        "utc_offset" : null, 
+        "time_zone" : null, 
+        "geo_enabled" : false, 
+        "lang" : null, 
+        "contributors_enabled" : false, 
+        "is_translator" : false, 
+        "profile_background_color" : "", 
+        "profile_background_image_url" : "", 
+        "profile_background_image_url_https" : "", 
+        "profile_background_tile" : false, 
+        "profile_link_color" : "", 
+        "profile_sidebar_border_color" : "", 
+        "profile_sidebar_fill_color" : "", 
+        "profile_text_color" : "", 
+        "profile_use_background_image" : true, 
+        "profile_image_url" : "", 
+        "profile_image_url_https" : "", 
+        "default_profile" : true, 
+        "default_profile_image" : false, 
+        "following" : null, 
+        "follow_request_sent" : null, 
+        "notifications" : null
+    }, 
+    "geo" : null, 
+    "coordinates" : null, 
+    "place" : null, 
+    "contributors" : null, 
+    "is_quote_status" : false, 
+    "quote_count" : NumberInt(), 
+    "reply_count" : NumberInt(), 
+    "retweet_count" : NumberInt(), 
+    "favorite_count" : NumberInt(), 
+    "entities" : {
+        "hashtags" : [
+            {
+                "text" : "", 
+                "indices" : [
+                    NumberInt(), 
+                    NumberInt()
+                ]
+            }, 
+            {
+                "text" : "", 
+                "indices" : [
+                    NumberInt(), 
+                    NumberInt()
+                ]
+            }, 
+            {
+                "text" : "", 
+                "indices" : [
+                    NumberInt(), 
+                    NumberInt()
+                ]
+            }, 
+            {
+                "text" : "", 
+                "indices" : [
+                    NumberInt(), 
+                    NumberInt()
+                ]
+            }, 
+            {
+                "text" : "", 
+                "indices" : [
+                    NumberInt(), 
+                    NumberInt()
+                ]
+            }, 
+            {
+                "text" : "", 
+                "indices" : [
+                    NumberInt(), 
+                    NumberInt()
+                ]
+            }, 
+            {
+                "text" : "", 
+                "indices" : [
+                    NumberInt(), 
+                    NumberInt()
+                ]
+            }
+        ], 
+        "urls" : [
+            {
+                "url" : "", 
+                "expanded_url" : "", 
+                "display_url" : "", 
+                "indices" : [
+                    NumberInt(), 
+                    NumberInt()
+                ]
+            }
+        ], 
+        "user_mentions" : [
+
+        ], 
+        "symbols" : [
+
+        ]
+    }, 
+    "favorited" : false, 
+    "retweeted" : false, 
+    "possibly_sensitive" : false, 
+    "filter_level" : "low", 
+    "lang" : "ja", 
+    "timestamp_ms" : ""
+}
+{ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------
+
+
+"_id" : ObjectId(""), 
+    "created_at" : "", 
+    "id" : NumberLong(), 
+    "id_str" : "", 
+    "text" : "", 
+    "source" : "", 
+    "truncated" : false, 
+    "in_reply_to_status_id" : null, 
+    "in_reply_to_status_id_str" : null, 
+    "in_reply_to_user_id" : null, 
+    "in_reply_to_user_id_str" : null, 
+    "in_reply_to_screen_name" : null, 
+    "user" : {
+        "id" : NumberInt(), 
+        "id_str" : "", 
+        "name" : "", 
+        "screen_name" : "", 
+        "location" : "", 
+        "url" : "", 
+        "description" : "", 
+        "translator_type" : "none", 
+        "protected" : false, 
+        "verified" : false, 
+        "followers_count" : NumberInt(), 
+        "friends_count" : NumberInt(), 
+        "listed_count" : NumberInt(), 
+        "favourites_count" : NumberInt(), 
+        "statuses_count" : NumberInt(), 
+        "created_at" : "", 
+        "utc_offset" : null, 
+        "time_zone" : null, 
+        "geo_enabled" : false, 
+        "lang" : null, 
+        "contributors_enabled" : false, 
+        "is_translator" : false, 
+        "profile_background_color" : "", 
+        "profile_background_image_url" : "", 
+        "profile_background_image_url_https" : "", 
+        "profile_background_tile" : false, 
+        "profile_link_color" : "", 
+        "profile_sidebar_border_color" : "C0DEED", 
+        "profile_sidebar_fill_color" : "DDEEF6", 
+        "profile_text_color" : "333333", 
+        "profile_use_background_image" : true, 
+        "profile_image_url" : "http://pbs.twimg.com/profile_images/463020897423482880/pmulOpqv_normal.jpeg", 
+        "profile_image_url_https" : "https://pbs.twimg.com/profile_images/463020897423482880/pmulOpqv_normal.jpeg", 
+        "default_profile" : true, 
+        "default_profile_image" : false, 
+        "following" : null, 
+        "follow_request_sent" : null, 
+        "notifications" : null
+    }, 
+    "geo" : null, 
+    "coordinates" : null, 
+    "place" : null, 
+    "contributors" : null, 
+    "is_quote_status" : false, 
+    "quote_count" : NumberInt(0), 
+    "reply_count" : NumberInt(0), 
+    "retweet_count" : NumberInt(0), 
+    "favorite_count" : NumberInt(0), 
+    "entities" : {
+        "hashtags" : [
+            {
+                "text" : "AI", 
+                "indices" : [
+                    NumberInt(22), 
+                    NumberInt(25)
+                ]
+            }, 
+            {
+                "text" : "", 
+                "indices" : [
+                    NumberInt(29), 
+                    NumberInt(38)
+                ]
+            }, 
+            {
+                "text" : "", 
+                "indices" : [
+                    NumberInt(), 
+                    NumberInt()
+                ]
+            }, 
+            {
+                "text" : "", 
+                "indices" : [
+                    NumberInt(), 
+                    NumberInt()
+                ]
+            }, 
+            {
+                "text" : "", 
+                "indices" : [
+                    NumberInt(), 
+                    NumberInt()
+                ]
+            }, 
+            {
+                "text" : "AI", 
+                "indices" : [
+                    NumberInt(68), 
+                    NumberInt(71)
+                ]
+            }, 
+            {
+                "text" : "読解", 
+                "indices" : [
+                    NumberInt(72), 
+                    NumberInt(75)
+                ]
+            }
+        ], 
+        "urls" : [
+            {
+                "url" : "https://t.co/Zkd3JZ8EFS", 
+                "expanded_url" : "http://akkey08.livedoor.blog/archives/54909769.html", 
+                "display_url" : "akkey08.livedoor.blog/archives/54909…", 
+                "indices" : [
+                    NumberInt(76), 
+                    NumberInt(99)
+                ]
+            }
+        ], 
+        "user_mentions" : [
+
+        ], 
+        "symbols" : [
+
+        ]
+    }, 
+    "favorited" : false, 
+    "retweeted" : false, 
+    "possibly_sensitive" : false, 
+    "filter_level" : "low", 
+    "lang" : "ja", 
+    "timestamp_ms" : ""
+}
+{ 

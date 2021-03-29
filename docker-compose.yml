@@ -26,10 +26,11 @@ services:
   
     depends_on:
       - mongo
+      - postgresql
     links:
       - mongo
+      - postgresql
 #
-
       #recuerda crear script para crear usuario de bd a utilizar
 
   postgresql:
