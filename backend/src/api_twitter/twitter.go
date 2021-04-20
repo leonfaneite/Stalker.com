@@ -22,7 +22,7 @@ var (
 
 	port = 27017
 
-	host = "localhost"
+	host = "mongo"
 
 	//database = "twitterdb"
 	//fmt.Sprintf("mongodb://%s:%s@%s:%d", user, pwd, host, port)

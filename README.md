@@ -1,1 +1,0 @@
-# Analitica77

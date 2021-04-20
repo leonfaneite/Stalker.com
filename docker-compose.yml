@@ -12,26 +12,33 @@ services:
       - "27017:27017"
     volumes:
       - /mongo:/data/db
+   
  
 
 
-  twitter:
-    container_name: Extractor
-    restart: always
-   
-    build:
-        context: ./Extractor
-    volumes:
-      - ./Extractor:/app
-  
-    depends_on:
-      - mongo
-      - postgresql
-    links:
-      - mongo
-      - postgresql
-#
-      #recuerda crear script para crear usuario de bd a utilizar
+#  twitter:
+#    container_name: Extractor
+#    restart: always
+#   
+#    build:
+#        context: ./Extractor
+#    volumes:
+#      - ./Extractor:/app
+#  
+#    depends_on:
+#      - mongo
+#      - postgresql
+#    links:
+#      - mongo
+#      - postgresql
+##
+#      #recuerda crear script para crear usuario de bd a utilizar
+
+
+
+
+
+
 
   postgresql:
     image: 'postgres:13.2-alpine'
@@ -42,3 +49,32 @@ services:
        - POSTGRES_DB=customer
     ports:
        - "5432:5432"
+  
+
+
+
+       
+
+  backend:
+
+    container_name: backend
+
+    restart: always 
+
+    build:
+
+      context: ./backend
+
+    volumes:
+
+       - ./backend:/backend/
+    ports:
+       - "3000:3000"
+    depends_on:
+        - mongo
+        - postgresql
+    links:
+        
+        - mongo
+        - postgresql
+#
