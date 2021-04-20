@@ -81,7 +81,7 @@ func Insert_words(words models.Query) int {
 }
 
 //
-func Delet_Words(w http.ResponseWriter, r *http.Request) {
+func Delet_Words_mongo(w http.ResponseWriter, r *http.Request) {
 
 	collection := userCollection
 	// Set header
